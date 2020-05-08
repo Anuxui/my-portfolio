@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.droplet {
+  background: rgb(205, 114, 102);
+  border-radius: 2% 50%;
+  height: 100px;
+  margin: 100px;
+  transition: all 3s;
+  transition-duration: ease-in-out;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  animation-name: lovesme;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes lovesme {
+  0% {
+    transform: scale(0.3);
+    background-color: rgb(205, 114, 102);
+    border-radius: 100%;
+  }
+  50% {
+    background-color: rgb(255, 238, 0);
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: green;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div:hover {
+  transform: rotate(1080deg);
+}
+
+.droplet1 {
+  background: rgb(102, 205, 136);
+  border-radius: 2% 50%;
+  height: 100px;
+  margin: 100px;
+  transition: all 3s;
+  transition-duration: ease-in-out;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  animation-name: lovesmenot;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes lovesmenot {
+  0% {
+    transform: scale(0.3);
+    background-color: rgb(102, 205, 136);
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: rgb(252, 6, 6);
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div:hover {
+  transform: rotate(-1080deg);
+}
